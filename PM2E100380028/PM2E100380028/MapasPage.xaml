@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="PM2E100380028.MapasPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <maps:Map
+                      x:Name="mpMapa" 
+                      MapType="Street" 
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand" 
+                      IsShowingUser="True"
+               MoveToLastRegionOnLayoutChange="False"
+                />
+            <StackLayout IsVisible="false">
+                <Label x:Name="txtLongitudMap" Text="{Binding longitud}"/>
+                <Label x:Name="txtLactitudMap" Text="{Binding latitud}"/>
+                <Label x:Name="txtShortDesciptionMap" Text="{Binding descripcionC}"/>
+                <Label x:Name="txtLargeDescriptionMap" Text="{Binding descripcionL}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

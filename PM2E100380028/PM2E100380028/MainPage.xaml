@@ -1,0 +1,25 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E100380028.MainPage">
+   
+    <ScrollView>
+        <StackLayout>
+            <Label  Margin="20,10,0,0" FontSize="20" Text="Latitud: "/>
+            <Entry x:Name="txtLati" Margin="20,0"  IsEnabled="False" />
+            <Label  Margin="20,0" FontSize="20" Text="Longitud: "/>
+            <Entry  x:Name="txtLongi"  Margin="20,0" IsEnabled="False"  />
+            <Label  Margin="20,0" FontSize="20" Text="Describa el lugar: "/>
+            <Editor x:Name="Descrip" Margin="20,0"  />
+            <Label  Margin="20,0" FontSize="20" Text="Descripcion: "/>
+            <Entry x:Name="txtDescripC"  Margin="20,0" Placeholder="Casa"/>
+            <StackLayout Margin="20,10,20,10"  Orientation="Horizontal">
+                <Button x:Name="btnSavedUbication"  HeightRequest="50"  CornerRadius="20" Text="Guardar" Clicked="Button_Clicked"/>
+                <Button  x:Name="btnListUbication1" HeightRequest="50"  CornerRadius="20"  Text="Listas de Ubicaciones" Clicked="Button_Clicked_1"/>
+                <Button x:Name="btnNewUbication" HeightRequest="50"  CornerRadius="20" Text="Nueva Ubicacion" Clicked="btnNewUbication_Clicked"  />
+            </StackLayout>
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
